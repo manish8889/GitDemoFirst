@@ -1,2 +1,2 @@
 # GitDemoFirst
-kotlin demo
+this is simple  kotlin example in android studio for beginners
