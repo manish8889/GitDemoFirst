@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var buttonNext: Button;
     lateinit var editText: EditText;
     lateinit var cleartext: TextView;
+    lateinit var btncalc: Button;
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         cleartext = findViewById(R.id.textView5);
         button = findViewById(R.id.button);
         buttonNext = findViewById(R.id.buttonNext);
+        btncalc = findViewById(R.id.buttonCalc);
+
         editText = findViewById(R.id.editText);
         cleartext.setOnClickListener() {
             editText.setText("");
@@ -45,6 +48,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
 
+        }
+
+        btncalc.setOnClickListener() {
+
+            var i: Intent = Intent(applicationContext, CalculatorActivity::class.java)
+            startActivity(i)
         }
 
 
